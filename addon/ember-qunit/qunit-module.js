@@ -1,4 +1,6 @@
-import { module as qunitModule } from 'qunit';
+import QUnit from 'npm:qunitjs';
+
+var qunitModule = QUnit.module;
 
 function beforeEachCallback(callbacks) {
   if (typeof callbacks !== 'object') { return; }

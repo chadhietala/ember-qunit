@@ -1,6 +1,8 @@
 import Ember from 'ember';
 import { getContext } from 'ember-test-helpers';
-import { test as qunitTest } from 'qunit';
+import QUnit from 'npm:qunitjs';
+
+var qunitTest = QUnit.test;
 
 export default function test(testName, callback) {
   function wrapper(assert) {

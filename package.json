@@ -2,7 +2,6 @@
   "name": "ember-qunit",
   "version": "0.4.0",
   "description": "QUnit helpers for testing Ember.js applications",
-  "main": "lib/ember-qunit.js",
   "scripts": {
     "build": "ember build",
     "prepublish": "bower install",
@@ -29,5 +28,15 @@
     "ember-cli": "^0.1.12",
     "ember-cli-release": "^0.2.3",
     "git-repo-version": "^0.1.2"
+  },
+  "keywords": [
+    "ember-addon",
+    "ember"
+  ],
+  "ember-addon": {
+    "main": "index.js"
+  },
+  "dependencies": {
+    "qunitjs": "^1.18.0"
   }
 }
